@@ -12,11 +12,11 @@
 
 ![alt text](image-2.png)
 
-`SELECT _ FROM EmployeeInfo;`
+`SELECT * FROM EmployeeInfo;`
 
 ![alt text](image-3.png)
 
-`SELECT _ FROM EmployeePosition;`
+`SELECT * FROM EmployeePosition;`
 
 ![alt text](image-4.png)
 
@@ -64,7 +64,7 @@ LIMIT 5;`
 
 ### 6. Write a query to fetch details of all employees excluding the employees with first names,“Sanjay” and “Sonia” from the EmployeeInfo table.
 
-`SELECT \* FROM EmployeeInfo
+`SELECT * FROM EmployeeInfo
 WHERE empfname NOT IN ('Sanjay','Sonia');`
 
 ![alt text](image-10.png)
@@ -81,7 +81,7 @@ ORDER BY COUNT(empid) ASC;`
 
 #### Before Indexing fetching data for a particular lastname
 
-`SELECT \* FROM EmployeeInfo
+`SELECT * FROM EmployeeInfo
 WHERE emplname = 'Kapoor';`
 
 ![alt text](before_index.png)
@@ -94,7 +94,7 @@ WHERE emplname = 'Kapoor';`
 
 #### After Indexing fetching data for a particular lastname
 
-`SELECT \* FROM EmployeeInfo
+`SELECT * FROM EmployeeInfo
 WHERE emplname = 'Kapoor';`
 
 ![alt text](after_idx.png)
