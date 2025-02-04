@@ -27,11 +27,12 @@ HAVING department='Admin';`
 
 `SELECT SUBSTR(EmpLname,1,4) AS "First_Four_Char" from EmployeeInfo;`
 
--- 3. Write q query to find all the employees whose salary is between 50000 to 100000.
-SELECT CONCAT_WS(' ',empfname,emplname) AS "Employee Name", salary from employeeinfo i
-INNER JOIN employeeposition p
-ON i.empid=p.empid
-WHERE p.salary BETWEEN 50000 AND 100000;
+### 3. Write q query to find all the employees whose salary is between 50000 to 100000.
+
+`SELECT CONCAT_WS(' ',empfname,emplname) AS "Employee Name", salary from employeeinfo i`
+`INNER JOIN employeeposition p`
+`ON i.empid=p.empid`
+`WHERE p.salary BETWEEN 50000 AND 100000;`
 
 -- 4. Write a query to find the names of employees that begin with ‘S’
 SELECT Empfname FROM EmployeeInfo
